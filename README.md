@@ -91,7 +91,11 @@ Use this repository's **Issues** tab to report bugs or suggest features. Include
 
 Contributions and documentation improvements are welcome.
 
-DONATION ADDRESS (XMR): 8BtKmGYtNSobhaJND6Jwm3YBXoxdpDAH3DBVtVmX6qHrfT2AAiCZU6SenxUXkbPsPagENwh96TA4PYJp5iYoiZEa8fdZJak
+## DONATIONS
+XMR: 8BtKmGYtNSobhaJND6Jwm3YBXoxdpDAH3DBVtVmX6qHrfT2AAiCZU6SenxUXkbPsPagENwh96TA4PYJp5iYoiZEa8fdZJak
+BTC: bc1q3wpwal26ae0ad5f3p0y43hp7e9w8n8kyx2w8gv
+
+Thank you for helping keep this project in development!
 
 ## License and acknowledgments
 
