@@ -68,44 +68,13 @@ The selector controls mining worker threads and RandomX dataset initialization t
 
 The interface displays the configured application developer fee separately from XMRig's upstream donation.
 
-- **Application developer fee:** configurable at build time; the supplied source defaults to **0%**.
+- **Application developer fee:** configurable at build time; the supplied source defaults to **2.5%**.
 - **XMRig upstream donation:** **1%**, separately enabled in the supplied configuration.
 - **Pool fees and payout thresholds:** determined by the selected pool.
 
 When enabled, the application fee assigns a portion of measured active mining time to the developer wallet. Switching recipients restarts the engine. A percentage of mining time does not guarantee the same percentage of earnings.
 
 The selected pool handles balances and payouts. RandomXMac is a mining interface, not a wallet or a payout service. It uses RandomX mining; connecting to a multi-algorithm pool does not add automatic algorithm switching.
-
-
-The example enables a 1% application fee in addition to XMRig's donation. Supported application fees range from 0–20%; an enabled fee requires a valid receiving address. A separate developer pool can be configured in the same file.
-
-## Bundled components
-
-The project supplies XMRig 6.26.0 executables for both architectures, with RandomX and non-system dependencies included. These include libuv, hwloc, and OpenSSL.
-
-- `Sources/`: SwiftUI interface, configuration, status handling, and process supervision.
-- `Scripts/`: engine embedding and macOS verification scripts.
-- `Vendor/`: engine binaries, original archives, and dependency sources.
-- `Resources/Licenses/`: third-party license notices.
-- `Tests/`: portable process-supervisor tests.
-
-Rebuilding XMRig and its dependencies requires additional build tools. Those tools are not required to build the interface around the supplied engines.
-
-## Testing
-
-Portable supervisor tests require Python 3 and a C compiler:
-
-```sh
-python3 Tests/test_supervisor.py
-```
-
-On a supported Mac with Xcode, run configuration checks and an offline RandomX benchmark:
-
-```sh
-bash Scripts/test-macos.sh
-```
-
-Before publishing a release, test installation, pool login, TLS, share reporting, saved settings, reset behavior, shutdown, and any enabled developer-fee phase on both architectures.
 
 ## Privacy and operation
 
