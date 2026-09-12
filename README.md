@@ -30,7 +30,7 @@ RandomX uses several gigabytes of memory and can place a sustained load on your 
 
 ## Download and install
 
-Open this repository's **Releases** section and select a packaged app download, if available. GitHub's automatically generated **Source code** archives contain the project, rather than a ready-to-run installation.
+Open this repository's **Releases** section and select a packaged app download.
 
 - For a `.dmg` download, open the disk image and drag **RandomXMac** into **Applications**.
 - For an app `.zip`, extract it and move **RandomXMac.app** into **Applications**.
