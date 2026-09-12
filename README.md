@@ -35,7 +35,7 @@ Open this repository's **Releases** section and select a packaged app download, 
 - For a `.dmg` download, open the disk image and drag **RandomXMac** into **Applications**.
 - For an app `.zip`, extract it and move **RandomXMac.app** into **Applications**.
 
-Run this in terminal: xattr -d com.apple.quarantine /Applications/RandomXMac.app 2>/dev/null || true
+Run this command in terminal: xattr -d com.apple.quarantine /Applications/RandomXMac.app 2>/dev/null || true
 
 ## Getting started
 
